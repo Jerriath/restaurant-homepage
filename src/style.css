@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("./Jomhuria-Regular.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    font-size: 200px;
+}
+
+h2 {
+    position: relative;
+    font-size: 50px;
+    bottom: 200px;
+}
+
+p {
+    position: relative;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    height: 30px;
+    align-items: center;
+    color: white;
+    margin-left: auto;
+    left: 0;
+    margin-right: auto;
+    right: 0;
+    justify-content: space-between;
+    vertical-align: baseline;
+    padding: 35px 0;
+}
+
+
+#navHolder {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    font-family: "MyFont";
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#background {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+#content {
+    position: absolute;
+    top: 0; bottom: 450px; left: 0; right: 0;
+    margin: auto;
+    height: 200px;
+}
+
+#title {
+    font-family: "MyFont";
+    width: 600px;
+    height: 200px;
+    color: rgb(18, 104, 128);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
