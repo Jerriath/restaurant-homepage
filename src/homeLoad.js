@@ -2,12 +2,22 @@ export default function pageLoad() {
 
     //Cache DOM
     let body = document.querySelector("body");
-    let content = document.querySelector("#content");
+    let homeContent = document.querySelector("#homeContent");
 
     //Create homepage DOM elements
     const background = new Image(); //Background image
     background.src = "imgs/restaurant.jpg";
+    background.id = "background";
     background.classList.add("background");
+
+    const food = new Image();
+    food.src = "imgs/food.jpeg";
+    food.id = "food";
+    food.classList.add("background");
+    food.style.zIndex = "-1";
+    food.style.opacity = "0";
+    food.classList.add("opaque");
+
 
     const header = document.createElement("header"); //Header div
     header.classList.add("header");
@@ -27,19 +37,19 @@ export default function pageLoad() {
     hours.id = "hours";
 
     //Creates the elements to fill the navBar
-    let home = document.createElement("div");
+    let home = document.createElement("button");
     home.id = "home";
     let homeText = document.createElement("p");
     homeText.textContent = "Home";
     home.appendChild(homeText);
     homeText.classList.add("navText")
-    let menu = document.createElement("div");
+    let menu = document.createElement("button");
     menu.id = "menu";
     let menuText = document.createElement("p");
     menuText.textContent = "Menu";
     menu.appendChild(menuText);
     menuText.classList.add("navText")
-    let contact = document.createElement("div");
+    let contact = document.createElement("button");
     contact.id = "contact";
     let contactText = document.createElement("p");
     contactText.textContent = "Contact";
@@ -68,7 +78,7 @@ export default function pageLoad() {
     titleDiv.appendChild(message);
 
     //Append titleDiv to content
-    content.appendChild(titleDiv);
+    homeContent.appendChild(titleDiv);
 
     //Create elements for the restaurant operation hours
     let sunday = document.createElement("p");
@@ -96,10 +106,11 @@ export default function pageLoad() {
     hours.appendChild(friday);
     hours.appendChild(saturday);
 
-    content.appendChild(hours);
+    homeContent.appendChild(hours);
 
 
     body.appendChild(background);
+    body.appendChild(food);
     body.appendChild(header);
 
 }
