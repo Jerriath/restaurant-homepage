@@ -3,20 +3,25 @@ export default function pageLoad() {
     //Cache DOM
     let body = document.querySelector("body");
     let homeContent = document.querySelector("#homeContent");
+    let menuContent = document.querySelector("#menuContent");
+    let contactContent = document.querySelector("#contactContent");
+
+    //Testing stuff here
+    menuContent.style.visibility = "hidden";
+    contactContent.style.visibility = "hidden";
+
 
     //Create homepage DOM elements
     const background = new Image(); //Background image
     background.src = "imgs/restaurant.jpg";
     background.id = "background";
     background.classList.add("background");
+    background.style.opacity = 1;
 
     const food = new Image();
     food.src = "imgs/food.jpeg";
     food.id = "food";
     food.classList.add("background");
-    food.style.zIndex = "-1";
-    food.style.opacity = "0";
-    food.classList.add("opaque");
 
 
     const header = document.createElement("header"); //Header div

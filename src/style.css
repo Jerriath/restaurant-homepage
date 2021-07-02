@@ -109,10 +109,11 @@ button:hover {
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
+    opacity: 1;
 }
 
-.opaque {
-    opacity: 1;
+.transparent {
+    opacity: 0;
 }
 
 .title {
@@ -152,4 +153,9 @@ button:hover {
     margin: auto;
     height: 100%;
     visibility: visible;
+}
+
+#food {
+    z-index: -3;
+    opacity: 1;
 }
