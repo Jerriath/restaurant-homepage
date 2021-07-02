@@ -21,18 +21,25 @@ h2 {
 }
 
 p {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.navText {
     position: relative;
     top: 0; bottom: 0; left: 0; right: 0;
     margin: auto;
 }
 
-header {
+.header {
     position: fixed;
     top: 0;
     width: 90%;
     height: 30px;
     align-items: center;
-    color: rgb(247, 187, 76);
+    color: rgb(221, 144, 0);
     margin-left: auto;
     left: 0;
     margin-right: auto;
@@ -43,7 +50,7 @@ header {
 }
 
 
-#navHolder {
+.navHolder {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -60,7 +67,7 @@ header {
     padding-top: 4px;
 }
 
-#navBar {
+.navBar {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -69,20 +76,6 @@ header {
     margin-bottom: auto;
     justify-content: space-between;
     width: 250px;
-}
-
-#background {
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    background-size: cover;
-    height: 135%;
-    width: auto;
-    text-indent: -9999px;
-    position: fixed;
-    top: -200px;
-    z-index: -1;
 }
 
 .background {
@@ -99,14 +92,7 @@ header {
     z-index: -1;
 }
 
-#content {
-    position: absolute;
-    top: 0; bottom: 450px; left: 0; right: 0;
-    margin: auto;
-    height: 200px;
-}
-
-#title {
+.title {
     font-family: "MyFont";
     width: 800px;
     height: 200px;
@@ -116,4 +102,28 @@ header {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.hours {
+    font-family: "MyFont";
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: rgb(221, 144, 0);
+    top: 50px;
+    background-color: rgba(0, 0, 0, .7);
+    border: 2px solid rgba(0, 0, 0, .7);
+    border-radius: 20px;
+}
+
+#content {
+    position: absolute;
+    top: 0; bottom: 450px; left: 0; right: 0;
+    margin: auto;
+    height: 200px;
 }
