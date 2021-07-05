@@ -1,8 +1,10 @@
 import homeLoad from "./homeLoad.js";
 import menuLoad from "./menuLoad.js";
+import contactLoad from "./contactLoad.js";
 
 homeLoad();
 menuLoad();
+contactLoad();
 
 //Cache DOM
 let home = document.querySelector("#home");
@@ -13,6 +15,9 @@ let homeContent = document.querySelector("#homeContent");
 let menuContent = document.querySelector("#menuContent");
 let contactContent = document.querySelector("#contactContent");
 let background = document.querySelector("#background");
+homeContent.style.visibility = "visible";
+menuContent.style.visibility = "hidden";
+contactContent.style.visibility = "hidden";
 
 menu.addEventListener("click", showMenu);
 menu.addEventListener("click", hideHome);
