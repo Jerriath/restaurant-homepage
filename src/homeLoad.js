@@ -6,9 +6,6 @@ export default function pageLoad() {
     let menuContent = document.querySelector("#menuContent");
     let contactContent = document.querySelector("#contactContent");
 
-    //Testing stuff here
-    menuContent.style.visibility = "hidden";
-    contactContent.style.visibility = "hidden";
 
 
     //Create homepage DOM elements

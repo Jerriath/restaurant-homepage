@@ -1,6 +1,8 @@
 import homeLoad from "./homeLoad.js";
+import menuLoad from "./menuLoad.js";
 
 homeLoad();
+menuLoad();
 
 //Cache DOM
 let home = document.querySelector("#home");
