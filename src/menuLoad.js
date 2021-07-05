@@ -46,6 +46,12 @@ export default function() {
     let tatorsDiv = document.createElement("div");
     let burgerDiv = document.createElement("div");
     let chickenDiv = document.createElement("div");
+    beerDiv.classList.add("imageDiv");
+    meadDiv.classList.add("imageDiv");
+    friesDiv.classList.add("imageDiv");
+    tatorsDiv.classList.add("imageDiv");
+    burgerDiv.classList.add("imageDiv");
+    chickenDiv.classList.add("imageDiv");
 
     //Append images
     beerDiv.appendChild(beer);
@@ -54,6 +60,34 @@ export default function() {
     tatorsDiv.appendChild(tators);
     burgerDiv.appendChild(burger);
     chickenDiv.appendChild(chicken);
+
+    //Create food text elements
+    let beerText = document.createElement("p");
+    let meadText = document.createElement("p");
+    let friesText = document.createElement("p");
+    let tatorsText = document.createElement("p");
+    let burgerText = document.createElement("p");
+    let chickenText = document.createElement("p");
+    beerText.textContent = "Beer";
+    meadText.textContent = "Mead";
+    friesText.textContent = "Fries";
+    tatorsText.textContent = "Tator Tots";
+    burgerText.textContent = "Burger";
+    chickenText.textContent = "Chicken Sandwich";
+    beerText.classList.add("foodText");
+    meadText.classList.add("foodText");
+    friesText.classList.add("foodText");
+    tatorsText.classList.add("foodText");
+    burgerText.classList.add("foodText");
+    chickenText.classList.add("foodText");
+
+    //Append food Text
+    beerDiv.appendChild(beerText);
+    meadDiv.appendChild(meadText);
+    friesDiv.appendChild(friesText);
+    tatorsDiv.appendChild(tatorsText);
+    burgerDiv.appendChild(burgerText);
+    chickenDiv.appendChild(chickenText);
 
     //Appending to menuContent
     drinksDiv.appendChild(drinksTitle);
