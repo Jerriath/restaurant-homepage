@@ -17,7 +17,7 @@ export default function() {
     //Create and append text elements to the textDiv
     let number = document.createElement("p");
     number.classList.add("contactText");
-    number.textContent = "Phone Number: 8008111135"
+    number.textContent = "Phone Number: 123-456-7890"
     let address = document.createElement("p");
     address.classList.add("contactText");
     address.textContent = "Address: 1012 NY-24, Flanders, NY 11901"
