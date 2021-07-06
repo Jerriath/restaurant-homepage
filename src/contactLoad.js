@@ -1,7 +1,7 @@
 export default function() {
 
     //Cache DOM
-    let contactContent = document.querySelector("#contactContent");
+    let content = document.querySelector("#content");
 
     //Create contact elements
     let contactDiv = document.createElement("div");
@@ -31,6 +31,6 @@ export default function() {
     mapDiv.appendChild(mapImg);
     contactDiv.appendChild(textDiv);
     contactDiv.appendChild(mapDiv);
-    contactContent.appendChild(contactDiv);
+    content.appendChild(contactDiv);
 
 }

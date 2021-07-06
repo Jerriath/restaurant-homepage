@@ -1,7 +1,7 @@
 export default function() {
     
     //Cache DOM
-    let menuContent = document.querySelector("#menuContent");
+    let content = document.querySelector("#content");
 
     //Create menu elements
     let drinksDiv = document.createElement("div");
@@ -89,11 +89,11 @@ export default function() {
     burgerDiv.appendChild(burgerText);
     chickenDiv.appendChild(chickenText);
 
-    //Appending to menuContent
+    //Appending to content
     drinksDiv.appendChild(drinksTitle);
     foodDiv.appendChild(foodTitle);
-    menuContent.appendChild(drinksDiv);
-    menuContent.appendChild(foodDiv);
+    content.appendChild(drinksDiv);
+    content.appendChild(foodDiv);
 
     //Append each menu item to its appropriate div
     drinkItems.appendChild(beerDiv);

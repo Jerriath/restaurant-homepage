@@ -1,34 +1,9 @@
 export default function pageLoad() {
 
     //Cache DOM
-    let body = document.querySelector("body");
-    let homeContent = document.querySelector("#homeContent");
-    let menuContent = document.querySelector("#menuContent");
-    let contactContent = document.querySelector("#contactContent");
+    let content = document.querySelector("#content");
+    content.classList.add("homeContent");
 
-
-
-    //Create homepage DOM elements
-    const background = new Image(); //Background image
-    background.src = "imgs/restaurant.jpg";
-    background.id = "background";
-    background.classList.add("background");
-    background.style.opacity = 1;
-
-    const food = new Image();
-    food.src = "imgs/food.jpeg";
-    food.id = "food";
-    food.classList.add("background");
-
-
-    const header = document.createElement("header"); //Header div
-    header.classList.add("header");
-
-    const navHolder = document.createElement("div"); //Div to hold navBar
-    navHolder.classList.add("navHolder");
-
-    const navBar = document.createElement("nav"); //Nav element
-    navBar.classList.add("navBar");
 
     const titleDiv = document.createElement("div");
     titleDiv.classList.add("title");
@@ -38,32 +13,6 @@ export default function pageLoad() {
     hours.classList.add("hours");
     hours.id = "hours";
 
-    //Creates the elements to fill the navBar
-    let home = document.createElement("button");
-    home.id = "home";
-    let homeText = document.createElement("p");
-    homeText.textContent = "Home";
-    home.appendChild(homeText);
-    homeText.classList.add("navText")
-    let menu = document.createElement("button");
-    menu.id = "menu";
-    let menuText = document.createElement("p");
-    menuText.textContent = "Menu";
-    menu.appendChild(menuText);
-    menuText.classList.add("navText")
-    let contact = document.createElement("button");
-    contact.id = "contact";
-    let contactText = document.createElement("p");
-    contactText.textContent = "Contact";
-    contact.appendChild(contactText);
-    contactText.classList.add("navText")
-
-    //Append all elements to header/navHolder/navBar
-    navBar.appendChild(home);
-    navBar.appendChild(menu);
-    navBar.appendChild(contact);
-    navHolder.appendChild(navBar);
-    header.appendChild(navHolder);
 
     //Create elements for the content div
     let title = document.createElement("h1");
@@ -80,7 +29,7 @@ export default function pageLoad() {
     titleDiv.appendChild(message);
 
     //Append titleDiv to content
-    homeContent.appendChild(titleDiv);
+    content.appendChild(titleDiv);
 
     //Create elements for the restaurant operation hours
     let sunday = document.createElement("p");
@@ -108,11 +57,7 @@ export default function pageLoad() {
     hours.appendChild(friday);
     hours.appendChild(saturday);
 
-    homeContent.appendChild(hours);
+    content.appendChild(hours);
 
-
-    body.appendChild(background);
-    body.appendChild(food);
-    body.appendChild(header);
 
 }

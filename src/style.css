@@ -241,28 +241,24 @@ img {
     margin-top: 95px;
 }
 
-#homeContent {
+.homeContent {
+    transition: visibility 0s .5s, opacity .5s linear;
+}
+
+.menuContent {
+    transition: visibility 0s .5s, opacity .5s linear;
+}
+
+.contactContent {
+    transition: visibility 0s .5s, opacity .5s linear;
+}
+
+#content {
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     margin: auto;
     height: 100%;
     visibility: visible;
-}
-
-#menuContent {
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    margin: auto;
-    height: 100%;
-    visibility: hidden;
-}
-
-#contactContent {
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    margin: auto;
-    height: 100%;
-    visibility: hidden;
 }
 
 #food {
