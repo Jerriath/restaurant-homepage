@@ -40,6 +40,7 @@ export default function pageLoad() {
     let friday = document.createElement("p");
     let saturday = document.createElement("p");
 
+    //Adding textContent
     sunday.textContent = "Sunday:   12pm - 11am";
     monday.textContent = "Monday:   12pm - 10am";
     tuesday.textContent = "Tuesday: 12pm - 10am";

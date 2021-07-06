@@ -242,15 +242,15 @@ img {
 }
 
 .homeContent {
-    transition: visibility 0s .5s, opacity .5s linear;
+    transition: opacity 500ms;
 }
 
 .menuContent {
-    transition: visibility 0s .5s, opacity .5s linear;
+    transition: opacity 500ms;
 }
 
 .contactContent {
-    transition: visibility 0s .5s, opacity .5s linear;
+    transition: opacity 500ms;
 }
 
 #content {
