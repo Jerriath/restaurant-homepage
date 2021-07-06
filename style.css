@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("./Jomhuria-Regular.woff") format("woff");
+    font-weight: 999;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    font-size: 200px;
+}
+
+h2 {
+    position: relative;
+    font-size: 50px;
+    bottom: 200px;
+}
+
+p {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 10px;
+    color: rgb(221, 144, 0);
+    font-family: "MyFont";
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgba(12, 113, 138, 0.8);
+    transform: scale(1.2);
+}
+
+img {
+    height: 300px;
+    width: 500px;
+}
+
+.navText {
+    position: relative;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    height: 30px;
+    align-items: center;
+    color: rgb(221, 144, 0);
+    margin-left: auto;
+    left: 0;
+    margin-right: auto;
+    right: 0;
+    justify-content: space-between;
+    vertical-align: baseline;
+    padding: 35px 0;
+}
+
+
+.navHolder {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    font-family: "MyFont";
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-top: 4px;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.background {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    height: 135%;
+    width: auto;
+    text-indent: -9999px;
+    position: fixed;
+    top: -200px;
+    z-index: -2;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.title {
+    font-family: "MyFont";
+    width: 800px;
+    height: 200px;
+    color: rgb(8, 71, 87);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    top: 100px;
+}
+
+.hours {
+    font-family: "MyFont";
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: rgb(221, 144, 0);
+    top: 200px;
+    background-color: rgba(0, 0, 0, .7);
+    border: 2px solid rgba(0, 0, 0, .7);
+    border-radius: 20px;
+}
+
+.menuDiv {
+    font-family: "MyFont";
+    width: 1200;
+    height: auto;
+    color: rgb(8, 71, 87);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuTitle {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, .7);
+    border: 2px solid rgba(0, 0, 0, .7);
+    border-radius: 20px;
+}
+
+.menuItems {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.imageDiv {
+    margin: 50px 30px;
+    height: 300px;
+    width: 500px;
+    display: inline-block;
+    border: 10px solid rgba(221, 144, 0, .7);
+    border-radius: 10px;
+}
+
+.foodText {
+    font-size: 100px !important;
+    background-color: rgba(0, 0, 0, .5);
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    height: 80px;
+    margin-top: 4px;
+}
+
+.contactDiv {
+    background-color: rgba(0, 0, 0, .7);
+    border: 10px solid rgba(255, 166, 0, 0.7);
+    border-radius: 20px;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+}
+
+.contactItems {
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
+
+.contactImg {
+    height: 500px !important;
+    width: 400px !important;
+    border: 10px solid rgba(255, 166, 0, 00);
+    border-left: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    bottom: 10px;
+    right: 0px
+}
+
+.contactText {
+    font-family: "MyFont";
+    font-size: 40px !important;
+    color: rgba(15, 151, 185, 0.8);
+    margin-top: 95px;
+}
+
+.homeContent {
+    transition: opacity 500ms;
+}
+
+.menuContent {
+    transition: opacity 500ms;
+}
+
+.contactContent {
+    transition: opacity 500ms;
+}
+
+#content {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    height: 100%;
+    visibility: visible;
+}
+
+#food {
+    z-index: -3;
+    opacity: 1;
+}
